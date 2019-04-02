@@ -1,0 +1,10 @@
+[prune]
+  non-go = true
+  go-tests = true
+  unused-packages = true
+
+[[constraint]]
+  version = "v1.4.0"
+  name = "github.com/sirupsen/logrus"
+
+
