@@ -12,6 +12,7 @@ import (
 type Client interface {
 	OnChangeWithError(int, func(string)) error
 	OnChange(int, func(string))
+	OnChangeCtx(context.Context, int, func(string))
 	SendRequest(string) ([]byte, error)
 	GetVersion() (string, error)
 	GetSelfHost() (Host, error)
